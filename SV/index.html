@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hörbuchify</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h1>🎧 SV Audio</h1>
+      <input type="text" id="search" placeholder="Hörbuch suchen..." />
+      <ul id="book-list"></ul>
+    </aside>
+    <main class="player-area">
+      <div id="player-display">
+        <img id="cover-img" src="" alt="Cover" />
+        <h2 id="current-title">Wähle ein Hörbuch</h2>
+      </div>
+<br>
+<br>
+      <audio id="audio" controls></audio>
+
+      <!-- Lücke zwischen Cover und Musikplayer -->
+      <div class="gap"></div>
+
+      <!-- Kapitelanzeige -->
+      <div id="playlist"></div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
